@@ -1,23 +1,22 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
-    name: "VonageMLTransformers",
+    name: "VonageClientSDKVideoTransformers",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v10_15)
+        .iOS(.v15)
     ],
     products: [
         .library(
-            name: "VonageMLTransformers",
-            targets: ["VonageMLTransformers"]
-        ),
+            name: "VonageClientSDKVideoTransformers",
+            targets: ["VonageClientSDKVideoTransformers"]
+        )
     ],
     targets: [
         .binaryTarget(
-            name: "VonageMLTransformers",
-            url: "https://d3opqjmqzxf057.cloudfront.net/vonage-mltransformers/pod/vonagemltransformers/release/4.1.60/VonageMLTransformers.xcframework.4.1.60.zip",
-            checksum: "7c31086247f733c2bd13e6c5c003ffe2bb3e7851fe2947c82432c98946f71274"
+            name: "VonageClientSDKVideoTransformers",
+            url: "https://s3.us-east-1.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/vonage-ios-sdk-transformers-2.31.1.zip",
+            checksum: "1945671c7423d0fa262c7402b581ab6f79fc8dfb95a4e7252875dbebc5fc8979"
         )
     ]
 )
