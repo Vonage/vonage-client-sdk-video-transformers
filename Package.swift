@@ -1,11 +1,9 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "VonageClientSDKVideoTransformers",
-    platforms: [
-        .iOS(.v15)
-    ],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "VonageClientSDKVideoTransformers",
@@ -20,32 +18,15 @@ let package = Package(
         ),
         .target(
             name: "VonageClientSDKVideoTransformers",
-            dependencies: [
-                .target(name: "OpenTokTransformers")
-            ],
-            path: "Sources",
+            dependencies: ["OpenTokTransformers"],
+            path: "Sources/VonageClientSDKVideoTransformers",
             resources: [
-                // If you move `.tflite` files outside the xcframework, place them in Sources/Resources
-                // .process("Resources")
+                .process("Resources/selfie_segmentation.tflite")
             ],
             linkerSettings: [
-                .linkedFramework("Foundation"),
-                .linkedFramework("AVFoundation"),
-                .linkedFramework("AudioToolbox"),
-                .linkedFramework("CoreFoundation"),
-                .linkedFramework("CoreGraphics"),
-                .linkedFramework("CoreMedia"),
-                .linkedFramework("CoreTelephony"),
-                .linkedFramework("CoreVideo"),
-                .linkedFramework("GLKit"),
-                .linkedFramework("OpenGLES"),
-                .linkedFramework("QuartzCore"),
-                .linkedFramework("SystemConfiguration"),
-                .linkedFramework("UIKit"),
                 .linkedFramework("VideoToolbox"),
                 .linkedFramework("Accelerate"),
                 .linkedFramework("Network"),
-                .linkedFramework("MetalKit"),
                 .linkedLibrary("c++")
             ]
         )
