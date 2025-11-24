@@ -7,7 +7,7 @@ If a call to `OTVideoTransformer initWithName:properties:` or `OTAudioTransforme
 
 Swift Package Manager
 ---------------------
-You can add the VonageClientSDK Video Transformers by adding the [https://github.com/vonage/vonage-video-client-sdk-swift.git](https://github.com/Vonage/vonage-client-sdk-video-transformers.git) repository as a Swift Package Dependency.
+You can add the VonageClientSDK Video Transformers by adding the [https://github.com/vonage/vonage-client-sdk-video-transformers.git](https://github.com/Vonage/vonage-client-sdk-video-transformers.git) repository as a Swift Package Dependency.
 
 To add a package dependency to your Xcode project, select *File* > *Swift Packages* > *Add Package Dependency* and enter its repository URL.
 
