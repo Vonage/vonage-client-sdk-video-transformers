@@ -1,0 +1,4 @@
+You can modify this file to create no-op change lists. Try to write something
+funny and please don't add trailing whitespace.
+
+- AI adoption report validation (Kiro IDE, 16 Jul 2026)
