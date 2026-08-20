@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "VonageClientSDKVideoTransformers",
-    platforms: [.iOS(.v15)],
+    platforms: [.iOS(.v17)],
     products: [
         .library(
             name: "VonageClientSDKVideoTransformers",
@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OpenTokTransformers",
-            url: "https://s3.us-east-1.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/vonage-ios-sdk-transformers-2.34.1.zip",
-            checksum: "58ab756724820f7c5422d0c75c0ced3f072a579e64653968d9a1c7468877baa3"
+            url: "https://s3.us-east-1.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/vonage-ios-sdk-transformers-2.35.1.zip",
+            checksum: "c1f220bb65cb3fe94f778a2d8fe95a7480a17b4de02673eb297c689deec3c150"
         ),
         .target(
             name: "VonageClientSDKVideoTransformers",
