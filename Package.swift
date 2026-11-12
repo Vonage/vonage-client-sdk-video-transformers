@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OpenTokTransformers",
-            url: "https://s3.us-east-1.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/vonage-ios-sdk-transformers-2.35.1.zip",
-            checksum: "c1f220bb65cb3fe94f778a2d8fe95a7480a17b4de02673eb297c689deec3c150"
+            url: "https://s3.us-east-1.amazonaws.com/artifact.tokbox.com/rel/otkit-ios-sdk-xcframework/vonage-ios-sdk-transformers-2.36.0.zip",
+            checksum: "d55914ed64b3f3eb4c89628f01f13cb6de3b22e507602c4121edf72dac56ec79"
         ),
         .target(
             name: "VonageClientSDKVideoTransformers",
